@@ -17,5 +17,17 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'What Time Is It?') {
+    	message.reply('IT''S TIME FOR SOME LOVE!! YAYYYY!!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'How beautiful Leah is? 10 to 10') {
+    	message.reply('Let''s say 10000 / 10, Hehe <3 Leah');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
